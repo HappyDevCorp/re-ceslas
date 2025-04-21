@@ -119,7 +119,7 @@
 * **Resources:**
   * [GSM8K Dataset](https://huggingface.co/datasets/gsm8k)
 
-### Discrete Reasoning Over Paragraphs (DROP)
+### ~Discrete Reasoning Over Paragraphs (DROP)~
 
 * **Description:** An adversarially-created reading comprehension benchmark requiring models to navigate through references and execute operations like addition or sorting.
 * **Purpose:** To evaluate the ability of models to understand complex texts and perform discrete operations.
@@ -128,7 +128,7 @@
 * **Resources:**:
   * [DROP Dataset](https://huggingface.co/datasets/drop)
 
-### Counterfactual Reasoning Assessment (CRASS)
+### ~Counterfactual Reasoning Assessment (CRASS)~
 
 * **Description:** Evaluates counterfactual reasoning abilities of LLMs, focusing on "what if" scenarios.
 * **Purpose:** To assess models' ability to understand and reason about alternate scenarios based on given data.
