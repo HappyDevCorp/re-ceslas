@@ -3,8 +3,7 @@
 
 ## Knowledge and Language Understanding
 
-### Massive Multitask Language Understanding (MMLU)
-
+### ~Massive Multitask Language Understanding (MMLU)~
 * **Description:** Measures general knowledge across 57 different subjects, ranging from STEM to social sciences.
 * **Purpose:** To assess the LLM's understanding and reasoning in a wide range of subject areas.
 * **Relevance:** Ideal for multifaceted AI systems that require extensive world knowledge and problem solving ability.
@@ -13,7 +12,7 @@
   * [MMLU GitHub](https://github.com/hendrycks/test)
   * [MMLU Dataset](https://people.eecs.berkeley.edu/~hendrycks/data.tar)
 
-### AI2 Reasoning Challenge (ARC)
+### ~AI2 Reasoning Challenge (ARC)~
 
 * **Description:** Tests LLMs on grade-school science questions, requiring both deep general knowledge and reasoning abilities.
 * **Purpose:** To evaluate the ability to answer complex science questions that require logical reasoning.
@@ -52,7 +51,7 @@
 * **Resources:**
   * [LAMBADA Dataset: HuggingFace](https://huggingface.co/datasets/lambada)
 
-### HellaSwag
+### ~HellaSwag~
 
 * **Description:** Tests natural language inference by requiring LLMs to complete passages in a way that requires understanding intricate details.
 * **Purpose:** To evaluate the model's ability to generate contextually appropriate text continuations.
@@ -111,7 +110,7 @@
 
 ## Reasoning Capabilities
 
-### GSM8K
+### ~GSM8K~
 
 * **Description:** A set of 8.5K grade-school math problems that require basic to intermediate math operations.
 * **Purpose:** To test LLMs’ ability to work through multistep math problems.
