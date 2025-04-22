@@ -1,44 +1,11 @@
-# Benchmarks - A collection of benchmarks and datasets for evaluating LLM.
+# Benchmarks - A collection of benchmarks and datasets for evaluating LLM
+
 > Thanks to @leobeeson for this List
 
-## List of Benchmarks
-
-| ✅ | Benchmark    | Description                                                                 | Paper | Link |
-|----|-------------|-----------------------------------------------------------------------------|-----------| --- |
-|  | MMLU         | 57-subject exam for factual knowledge and reasoning.                        | [📄 Paper](https://arxiv.org/abs/2009.03300) | [🔗 GitHub](https://github.com/hendrycks/test) |
-|  | ARC          | Science questions needing reasoning beyond simple facts.                    | [📄 Paper](https://arxiv.org/abs/1803.05457) | [🔗 HuggingFace](https://huggingface.co/datasets/ai2_arc) |
-|  | BoolQ        | Yes/no questions over short paragraphs.                                     | [📄 Paper](https://arxiv.org/abs/1905.10044) | [📦 HuggingFace](https://huggingface.co/datasets/boolq) |
-|  | Natural Questions | Google search queries + long answers from Wikipedia.                 | [📄 Paper](https://research.google/pubs/pub47761/) | [🔗 Website](https://ai.google.com/research/NaturalQuestions) |
-|  | LAMBADA      | Predict final word of a passage needing long-term context.                  | [📄 Paper](https://arxiv.org/abs/1606.06031) | [📦 Dataset](https://huggingface.co/datasets/lambada) |
-|  | HellaSwag    | Contextual sentence completion (adversarial).                               | [📄 Paper](https://arxiv.org/abs/1905.07830) | [🔗 GitHub](https://github.com/rowanz/hellaswag) |
-|  | MultiNLI     | Natural language inference across genres.                                   | [📄 Paper](https://arxiv.org/abs/1704.05426) | [📦 Dataset](https://huggingface.co/datasets/multi_nli) |
-|  | SuperGLUE    | Harder variant of GLUE benchmark.                                           | [📄 Paper](https://arxiv.org/abs/1905.00537) | [🔗 Website](https://super.gluebenchmark.com/) |
-|  | TriviaQA     | QA benchmark with evidence retrieval.                                       | [📄 Paper](https://arxiv.org/abs/1705.03551) | [🔗 GitHub](https://github.com/mandarjoshi90/triviaqa) |
-|  | WinoGrande   | Commonsense reasoning with pronoun disambiguation.                          | [📄 Paper](https://arxiv.org/abs/1907.10641) | [📦 Dataset](https://huggingface.co/datasets/winogrande) |
-|  | SciQ         | Science multiple-choice QA.                                                 | [📄 Paper](https://arxiv.org/abs/1707.06209) | [📦 Dataset](https://huggingface.co/datasets/sciq) |
-|  | GSM8K       | Grade-school math for multi-step reasoning.                                 | [📄 Paper](https://arxiv.org/abs/2110.14168) | [📦 Dataset](https://huggingface.co/datasets/gsm8k) |
-|  | DROP        | Discrete reasoning over paragraphs (addition, comparison, etc.).             | [📄 Paper](https://arxiv.org/abs/1903.00161) | [📦 Dataset](https://huggingface.co/datasets/drop) |
-|  | CRASS       | Counterfactual "what-if" scenario reasoning.                                 | [📄 Paper](https://arxiv.org/abs/2112.11941) | [🔗 GitHub](https://github.com/apergo-ai/CRASS-data-set) |
-|  | RACE        | English exam reading comprehension.                                           | [📄 Paper](https://arxiv.org/abs/1704.04683) | [📦 Dataset](https://www.cs.cmu.edu/~glai1/data/race/) |
-|  | BBH         | BIG-Bench Hard — multi-step and complex reasoning.                           | [📄 Paper](https://arxiv.org/abs/2210.09261) | [🔗 GitHub](https://github.com/suzgunmirac/BIG-Bench-Hard) |
-|  | AGIEval     | Standardized test QA (SAT, GRE, LSAT, etc.).                                  | [📄 Paper](https://arxiv.org/abs/2304.06364) | [🔗 GitHub](https://github.com/ruixiangcui/AGIEval) |
-|  | BoolQ       | 15,000+ real yes/no questions from Google paired with Wikipedia passages      | [📄 Paper](https://arxiv.org/abs/1905.10044) | [📦 Dataset](https://huggingface.co/datasets/boolq) |
-|  | MT-bench    | Evaluates chat assistants on multi-turn coherence | [📄 Paper](https://arxiv.org/abs/2306.05685) | [📦 Dataset](https://huggingface.co/datasets/lmsys/mt_bench_human_judgments) |
-|  | QuAC | 14,000 dialogues and 100,000 Q&A pairs | [📄 Paper](https://arxiv.org/abs/1808.07036) | [📦 Dataset](https://quac.ai/) |
-|  | ACI-BENCH | Doctor-patient conversations + clinical notes | [📄 Paper](https://arxiv.org/abs/2306.02022) | [🔗 GitHub](https://github.com/wyim/aci-bench) |
-|  | MS-MARCO | Real web queries with human answers | [📄 Paper](https://arxiv.org/abs/1611.09268) | [📦 Dataset](https://huggingface.co/datasets/ms_marco) |
-|  | QMSum | Meeting summarization via queries | [📄 Paper](https://arxiv.org/abs/2104.05938) | [🔗 GitHub](https://github.com/Yale-LILY/QMSum) |
-|  | PIQA | Tests physical reasoning through QA | [📄 Paper](https://arxiv.org/abs/1911.11641) | [🔗 GitHub](https://github.com/ybisk/ybisk.github.io/tree/master/piqa) |
-|  | ToxiGen | Toxic/benign statements on minorities | [📄 Paper](https://arxiv.org/abs/2203.09509) | [🔗 GitHub](https://github.com/microsoft/TOXIGEN/tree/main), [📦 Dataset](https://huggingface.co/datasets/skg/toxigen-data) |
-|  | HHH (Helpfulness, Honesty, Harmlessness) | Evaluates model alignment to ethical standards | [📄 Paper](https://arxiv.org/abs/2112.00861) | [🔗 GitHub](https://github.com/anthropics/hh-rlhf)|
-|  | TruthfulQA | Measures truthfulness in response to misleading queries | [📄 Paper](https://arxiv.org/abs/2109.07958v2) | [🔗 GitHub](https://github.com/sylinrl/TruthfulQA) |
-|  | RAI (Responsible AI) | Evaluates safety risks like IP leakage in chats | [📄 Paper](https://arxiv.org/abs/2310.17750) | N/A |
-|  | CodeXGLUE | Tests code understanding, generation, completion | [📄 Paper](https://arxiv.org/abs/2102.04664) | [🔗 GitHub](https://github.com/microsoft/CodeXGLUE) |
-|  | HumanEval | Programming tasks to test code generation | [📄 Paper](https://arxiv.org/abs/2107.03374) | [🔗 GitHub](https://github.com/openai/human-eval) |
-|  | MBPP | 1,000 simple Python tasks for beginners | [📄 Paper](https://arxiv.org/abs/2108.07732) | [📦 Dataset](https://huggingface.co/datasets/mbpp) |
-
+## General Tasks
 
 ### ~Massive Multitask Language Understanding (MMLU)~
+
 * **Description:** Measures general knowledge across 57 different subjects, ranging from STEM to social sciences.
 * **Purpose:** To assess the LLM's understanding and reasoning in a wide range of subject areas.
 * **Relevance:** Ideal for multifaceted AI systems that require extensive world knowledge and problem solving ability.
@@ -374,14 +341,14 @@
 * **Abstract:** Recently, using a powerful proprietary Large Language Model (LLM) (e.g., GPT-4) as an evaluator for long-form responses has become the de facto standard. However, for practitioners with large-scale evaluation tasks and custom criteria in consideration (e.g., child-readability), using proprietary LLMs as an evaluator is unreliable due to the closed-source nature, uncontrolled versioning, and prohibitive costs. In this work, we propose Prometheus, a fully open-source LLM that is on par with GPT-4's evaluation capabilities when the appropriate reference materials (reference answer, score rubric) are accompanied. We first construct the Feedback Collection, a new dataset that consists of 1K fine-grained score rubrics, 20K instructions, and 100K responses and language feedback generated by GPT-4. Using the Feedback Collection, we train Prometheus, a 13B evaluator LLM that can assess any given long-form text based on customized score rubric provided by the user. Experimental results show that Prometheus scores a Pearson correlation of 0.897 with human evaluators when evaluating with 45 customized score rubrics, which is on par with GPT-4 (0.882), and greatly outperforms ChatGPT (0.392). Furthermore, measuring correlation with GPT-4 with 1222 customized score rubrics across four benchmarks (MT Bench, Vicuna Bench, Feedback Bench, Flask Eval) shows similar trends, bolstering Prometheus's capability as an evaluator LLM. Lastly, Prometheus achieves the highest accuracy on two human preference benchmarks (HHH Alignment & MT Bench Human Judgment) compared to open-sourced reward models explicitly trained on human preference datasets, highlighting its potential as an universal reward model.
 * **Insights:**
   * A scoring  rubric and a reference answer vastly improve correlation with human scores.
- 
+
 ## Industry Resources
 
 * [Latent Space - Benchmarks 201: Why Leaderboards > Arenas >> LLM-as-Judge](https://www.latent.space/p/benchmarks-201?publication_id=1084089&post_id=146497374&isFreemail=true&r=53qrp&triedRedirect=true)
-    *  **Summary:**
-        * The OpenLLM Leaderboard, maintained by Clémentine Fourrier, is a standardized and reproducible way to evaluate language models' performance.
-        * The leaderboard initially gained popularity in summer 2023 and has had over 2 million unique visitors and 300,000 active community members.
-        * The recent update to the leaderboard (v2) includes six benchmarks to address model overfitting and to provide more room for improved performance.
-        * LLMs are not recommended as judges due to issues like mode collapse and positional bias.
-        * If LLMs must be used as judges, open LLMs like Prometheus or JudgeLM are suggested for reproducibility.
-        * The LMSys Arena is another platform for AI engineers, but its rankings are not reproducible and may not accurately reflect model capabilities.
+**Summary:**
+  * The OpenLLM Leaderboard, maintained by Clémentine Fourrier, is a standardized and reproducible way to evaluate language models' performance.
+  * The leaderboard initially gained popularity in summer 2023 and has had over 2 million unique visitors and 300,000 active community members.
+  * The recent update to the leaderboard (v2) includes six benchmarks to address model overfitting and to provide more room for improved performance.
+  * LLMs are not recommended as judges due to issues like mode collapse and positional bias.
+  * If LLMs must be used as judges, open LLMs like Prometheus or JudgeLM are suggested for reproducibility.
+  * The LMSys Arena is another platform for AI engineers, but its rankings are not reproducible and may not accurately reflect model capabilities.
